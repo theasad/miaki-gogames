@@ -1,6 +1,6 @@
 ## Clone and setup pthon3 virtual envoiement
 
-[Click here to clone](https://github.com/theasad/mdrive-api.git)
+[Click here to clone](https://github.com/theasad/miaki-gogames.git)
 
 ## Install requirements
 
