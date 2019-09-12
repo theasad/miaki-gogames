@@ -6,18 +6,24 @@
 
 `pip install -r requirements.txt`
 
+## Migrate db
+
+`python manage.py migrate`
+
 ## Create superadmin
 
 `python manage.py createsuperuser`
 
+## Runserver
+
+`python manage.py runserver`
+
 ### Admin url
 
-1. /admin/
+`/admin/`
 
 ### Game list url
 
-1. /games/
+`/games/?category_id=1(optional)`
 
-```
-
-```
+            `Happy coding`
