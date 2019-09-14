@@ -21,7 +21,7 @@ from django.urls import include, path, re_path
 from .views import redirect_to_game_list
 
 urlpatterns = [
-    path('admin/', admin.site.urls),
+    path('admin', admin.site.urls),
     path('', redirect_to_game_list),
     path('', include('apps.game.urls')),
 ]
