@@ -5,11 +5,12 @@ verify_ssl = true
 
 [dev-packages]
 autopep8 = "*"
+pylint = "*"
 
 [packages]
-django = "*"
 djangorestframework = "*"
-pillow = "*"
+Django = "*"
+Pillow = "*"
 
 [requires]
 python_version = "3.7"

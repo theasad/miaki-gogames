@@ -23,7 +23,7 @@ from .views import redirect_to_game_list
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', redirect_to_game_list),
-    path('games/', include('apps.game.urls')),
+    path('', include('apps.game.urls')),
 ]
 
 urlpatterns += [
