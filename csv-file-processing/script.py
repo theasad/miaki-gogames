@@ -46,8 +46,9 @@ if not error:
         sys.stdout.write('\n')
         sys.stdout.write('Top five source stations:')
         sys.stdout.write('\n')
-        for key in top_source_stations:
-            station = top_source_stations[key]
-            sys.stdout.write('{} (code: {}): {} trips'.format(
-                station['source_station_name'], station['source_station_code'], str(station['total_trip'])))
+        for station in top_source_stations.values():
+            sys.stdout.write(
+                f"{station['source_station_name']} (code: {station['source_station_code']}): {str(station['total_trip'])} trips"
+            )
+
             sys.stdout.write('\n')
