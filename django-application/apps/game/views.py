@@ -9,11 +9,8 @@ class GameView(generics.ListAPIView):
     serializer_class = GameSerializer
 
     def get_queryset(self):
-        category_id = self.request.GET.get('category_id')
-
-        if category_id:
-            query_set = Game.objects.filter(category__exact=category_id)
-        else:
-            query_set = Game.objects.all()
-
-        return query_set
+        return (
+            Game.objects.filter(category__exact=category_id)
+            if (category_id := self.request.GET.get('category_id'))
+            else Game.objects.all()
+        )
